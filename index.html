@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Project_78
+        </title>
+    </head>
+    <body>
+        <h4 id="main">My Family Book</h4>
+        <img src="familybookcover.png" id="image" style="width: 200px;">
+        <button type="button" onclick="NextSlide()">Next</button>
+    </body>
+    <script>
+        var pictures=["familybookcover.png","262-2622734_homeless-clipart-poor-father-png-download.png","243-2439854_mother-cartoon-clip-art-animated-mom-png.png"]
+var i=0;
+
+function NextSlide(){
+            document.getElementById("image").src=pictures[i];
+i++; 
+if(i==3){
+    i=0;
+}
+
+
+        }
+        
+    </script>
+
+</html>
